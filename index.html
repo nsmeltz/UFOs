@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body>
+<body class="bg-dark">
     <!------------ Navigation Bar ------------->
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
           </nav>
     </div>
 
     <!----------- Heading Title --------------->
-    <div class = "jumbotron">
-        <h1> The Truth is Out There </h1>
-    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">The Truth is Out There</h1>
+      </div>
 
     <!------------- Article Title & Paragraph --------------->
     <!-- make a container to hold the information in the row-->
@@ -55,25 +55,24 @@
 
           <!-- assign column to the filter & insert filter--> 
           <div class="col-md-3">
-            <form>
+            <form class="bg-dark">
                 <!-- title of the column -->
                 <p>Filter Search</p>
+                <ul class="bg-dark">
+                <!-- date input field box-->
+                  <li class="bg-dark">
+                    <label for="date">Enter Date</label>
+                    <input type="text" placeholder="1/10/2010" id="datetime" />
+                  </li>
 
-                <!-- stacked list format-->
-                <ul class="list-group">
-                    
-                    <!-- date input field--> 
-                    <li class="list-group-item">
-                        <label for="date">Enter Date</label>
-                        <input type="text" placeholder="1/10/2010" id="datetime" />
-                    </li>
-                    
-                    <!-- clickable button-->
-                    <li class="list-group-item">
-                        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                    </li>
+                  <!-- Filter Table button-->
+                  <li class="bg-dark">
+                     <button id="filter-btn" type="button" class="btn-dark">
+                       Filter Table
+                     </button>
+                  </li>
                 </ul>
-            </form>
+               </form>
           </div>
 
           <!-- assign column to the table & insert table-->
